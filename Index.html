@@ -296,25 +296,31 @@ background:rgba(4,4,12,0.93);backdrop-filter:blur(14px)}
   <div id="splash-stars" style="position:absolute;inset:0;overflow:hidden;pointer-events:none"></div>
 
   <div style="font-size:5rem;animation:hopeBounce 1s ease-in-out infinite alternate;">🌸</div>
-  <div style="font-size:2rem;font-weight:900;
-    background:linear-gradient(90deg,#ff69b4,#ffaaff,#ff69b4);
+  <div style="font-size:2.4rem;font-weight:900;
+    background:linear-gradient(90deg,#ff69b4,#ffaaff,#ffe0ff,#ff69b4);
     -webkit-background-clip:text;-webkit-text-fill-color:transparent;
-    line-height:1.2;font-family:Nunito,sans-serif;">
+    line-height:1.2;font-family:Nunito,sans-serif;
+    text-shadow:none;filter:drop-shadow(0 0 18px #ff69b4aa);">
     Hope's<br>Art Studio
   </div>
+  <div style="font-size:1.1rem;font-weight:900;color:#ffccff;
+    font-family:Nunito,sans-serif;letter-spacing:0.02em;">
+    ✨ Hi Hope! Are you ready to<br>create some magic? ✨
+  </div>
   <div id="splash-msg" style="
-    font-size:1rem;color:#ffccff;font-weight:700;
-    font-family:Nunito,sans-serif;max-width:260px;line-height:1.6;
-    min-height:60px;
+    font-size:0.95rem;color:#ffaadd;font-weight:700;
+    font-family:Nunito,sans-serif;max-width:280px;line-height:1.7;
+    min-height:56px;
   ">✨ Getting your studio ready...</div>
   <div style="
     margin-top:8px;padding:14px 36px;
-    background:linear-gradient(135deg,#ff69b4,#cc44aa);
+    background:linear-gradient(135deg,#ff69b4,#cc44aa,#ff44cc);
     border-radius:50px;font-weight:900;font-size:1.1rem;
     color:#fff;font-family:Nunito,sans-serif;
-    box-shadow:0 0 30px #ff69b488;
+    box-shadow:0 0 30px #ff69b488,0 0 60px #ff69b422;
     animation:hopePulse 1.5s ease-in-out infinite;
-  ">Tap anywhere to start! 💖</div>
+    letter-spacing:0.03em;
+  ">💖 Tap to Start Creating! 💖</div>
 </div>
 
 <style>
@@ -1339,8 +1345,9 @@ function openTripTales(){openAbout();}
 
     var phrases = [
       "Hi Hope!",
+      "Are you ready to create some magic?",
       "Welcome to your very own Art Studio!",
-      "Let's make something magical today!"
+      "Let's make something amazing together!"
     ];
     var idx = 0;
     msg_el.textContent = '';
